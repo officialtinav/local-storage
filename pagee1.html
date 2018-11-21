@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <h1>add name</h1>
+    <input id="place" type="text">
+     <h1>add adverb</h1>
+    <input id="adverb" type="text">
+     <h1>add place</h1>
+    <input id="person" type="text">
+    <button onclick="story()">Save Name</button>
+    
+    <script>
+     function story() {
+      //put variable as value
+       var pe = document.getElementById('person').value;
+       localStorage.setItem('addName',pe);
+       
+       var ad = document.getElementById('adverb').value;
+       localStorage.setItem('addAdverb',ad);
+      
+       var pl = document.getElementById('place').value;
+       localStorage.setItem('addPlace',pl);
+       
+       location.href="pagee2.html"
+           
+     }
+    </script>
+  </body>
+</html>

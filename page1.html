@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h1>This is page 1</h1>
+    <input id="userinput" type="text">
+    <button onclick="save_user_name()">Save Name</button>
+    
+    <script>
+      function save_user_name() {
+        var x = document.getElementById('userinput').value;
+        localStorage.setItem('room1',x);
+        location.href="page2.html";
+      }
+    </script>
+  </body>
+</html>
