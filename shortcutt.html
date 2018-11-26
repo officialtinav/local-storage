@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <input type="text" id="user">
+    <button onclick="getName()">get name</button>
+    <script>
+    function getName() {
+      var name = document.getElementById('user').value;
+      sessionStorage.setItem('nameKey',name);
+      location.href = "shortcut2.html";
+    }
+    </script>
+  </body>
+  
+  
+  
+  
+</html>
